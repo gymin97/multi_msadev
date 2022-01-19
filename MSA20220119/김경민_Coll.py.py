@@ -19,8 +19,8 @@ mean = sum(val) / len(val)
 
 # 2번
 numbers = set(range(1,101))
-num_5 = set({})
-num_3 = set({})
+num_5 = set()
+num_3 = set()
 for num in numbers:
     if num % 5 == 0:
         num_5.add(num)
