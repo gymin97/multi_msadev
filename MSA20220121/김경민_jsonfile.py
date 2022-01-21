@@ -29,20 +29,39 @@ jsonData1 = {
 }
 
 try:
-    writeFile1 = open('Datalab/mydata2.json', 'w') 
+    writeFile1 = open('Datalab/mydata1.json', 'w') 
     json.dump(jsonData1, writeFile1) # 옵션으로 indent = 숫자
 except Exception as ex :
     print ('error: ',str(ex))
 else:
     writeFile1.close()
 
-try :
-    writeFile2 = open('Datalab/mydata3.json', 'w', encoding = 'utf-8' )  # 한글 이용시 - 파일 읽을떄 utf-8, dump 할때 ensure_ascii = False
-    json.dump(jsonData1, writeFile2, indent=4, ensure_ascii= False) 
+
+try:
+    writeFile2 = open('Datalab/mydata2.json', 'w', encoding="utf-8") 
+    json.dump(jsonData1, writeFile2, ensure_ascii=False) # 옵션으로 indent = 숫자
 except Exception as ex :
     print ('error: ',str(ex))
 else:
     writeFile2.close()
+
+
+try:
+    writeFile3 = open('Datalab/mydata3.json', 'w') 
+    json.dump(jsonData1, writeFile3, ensure_ascii=False, indent=4) # 옵션으로 indent = 숫자
+except Exception as ex :
+    print ('error: ',str(ex))
+else:
+    writeFile3.close()
+
+
+try :
+    writeFile4 = open('Datalab/mydata4.json', 'w', encoding = 'utf-8' )  # 한글 이용시 - 파일 읽을떄 utf-8, dump 할때 ensure_ascii = False
+    json.dump(jsonData1, writeFile4, ensure_ascii= False, indent=4) 
+except Exception as ex :
+    print ('error: ',str(ex))
+else:
+    writeFile4.close()
 
 
 tmp = 0

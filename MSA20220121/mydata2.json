@@ -1,1 +1,1 @@
-{"empid": 12345678, "name": "\ud64d\uae38\ub3d9", "info": [{"date1": "2022-01-21", "home": "\uc11c\uc6b8\uc2dc"}, {"dep": "\uac1c\ubc1c", "email": "aaa@aaa.co.kr"}], "empcheck": true}
+{"empid": 12345678, "name": "홍길동", "info": [{"date1": "2022-01-21", "home": "서울시"}, {"dep": "개발", "email": "aaa@aaa.co.kr"}], "empcheck": true}
